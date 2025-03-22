@@ -1,0 +1,63 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(145, 145, 145);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: rgb(145, 145, 145);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+    padding-bottom: 100px;
+}
+
+.texto{
+    color: #fff;
+    font-size: 0.8rem;
+    padding-bottom: 8px;
+}
+
+.logo {
+    max-width: 250px; /* Aumentado o tamanho da logo */
+    height: auto;
+    margin-bottom: 0px; /* Diminuído o espaço para baixo */
+}
+
+.instagram {
+    font-size: 1.2rem;
+    color: #000000;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.links .link {
+    display: flex;
+    align-items: center;
+    position: relative; /* Necessário para centralizar o texto */
+    margin: 10px 0;
+    padding: 10px;
+    color: #fff;
+    background-color: #000; /* Cor preta */
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 1rem;
+}
+
+.links .link img {
+    width: 25px; /* Tamanho maior do ícone */
+    height: 25px;
+    margin-right: 10px; /* Espaço entre ícone e texto */
+}
+
+.links .link span {
+    margin: 0 auto; /* Centraliza o texto */
+}
