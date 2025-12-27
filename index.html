@@ -1,50 +1,168 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top Car AutoCenter</title>
+    <title>Top Car Auto Center - Sua Oficina de Confiança</title>
+    
     <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17532341100"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'AW-17532341100');
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      // Verifica se o gtag existe (caso você esqueça a tag global) para não quebrar o site
+      if (typeof gtag === 'function') {
+          gtag('event', 'conversion', {
+              'send_to': 'AW-17532341100/nFvJCPjroNgbEOyWiahB',
+              'event_callback': callback
+          });
+      } else {
+          // Se o gtag não carregar, redireciona mesmo assim para não perder o cliente
+          window.location = url;
+      }
+      return false;
+    }
     </script>
-</head>
+    </head>
 <body>
-    <div class="container">
-        <img src="img/logo.png" alt="Logo da Mecânica" class="logo">
-        <p class="instagram">@autocentertopcar.2022</p>
-        <div class="texto">
-            <h2>Solicitar Atendimento:</h2>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">TOP CAR <span>Auto Center</span></div>
+            <nav class="nav-links">
+                <a href="#home">Início</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <div class="mobile-menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
-        <div class="links">
-            <a href="https://wa.me/+555189971101?text=Ol%C3%A1,%20gostaria%20de%20agendar%20um%20atendimento." class="link">
-                <img src="img/whatsapp.svg" alt="WhatsApp">
-                <span>Whatsapp</span>
-            </a>
-            <a href="tel:+555189971101" class="link">
-                <img src="img/telefone.svg" alt="Telefone">
-                <span>Telefone</span>
-            </a>
-            <a href="mailto:topcarautocenter2022@gmail.com" class="link">
-                <img src="img/email.svg" alt="Email">
-                <span>Email</span>
-            </a>
-            <a href="https://maps.app.goo.gl/4h5m4wvhtTKnj6ft8" class="link">
-                <img src="img/loc.svg" alt="Google Maps">
-                <span>Google Maps</span>
-            </a>           
-            <a href="https://ul.waze.com/ul?place=ChIJ63dZDUBpIpUR9rLiQbE97X8&ll=-29.32812230%2C-49.74693850&navigate=yes&utm_medium=send_to_phone_QR" class="link">
-                <img src="img/loc.svg" alt="Waze">
-                <span>Waze</span>
-            </a>
-        </div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#home" class="mobile-link">Início</a>
+        <a href="#servicos" class="mobile-link">Serviços</a>
+        <a href="#sobre" class="mobile-link">Sobre</a>
+        <a href="#contato" class="mobile-link">Contato</a>
     </div>
+
+    <section id="home" class="hero">
+        <div class="hero-overlay">
+            <div class="container hero-content">
+                <h1>Especialistas em cuidar do seu carro</h1>
+                <p>Mecânica geral, injeção eletrônica e diagnósticos precisos.</p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/5511999999999" class="btn btn-primary">Agendar Agora</a>
+                    
+                    <a href="https://goo.gl/maps/SEU_LINK_AQUI" 
+                       onclick="return gtag_report_conversion(this.href);"
+                       class="btn btn-outline">
+                       <i class="fas fa-location-arrow"></i> Traçar Rota
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="section container">
+        <h2 class="section-title">Nossos Serviços</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-oil-can"></i>
+                <h3>Troca de Óleo</h3>
+                <p>Lubrificantes originais e troca de filtros.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-cogs"></i>
+                <h3>Mecânica Geral</h3>
+                <p>Motor, câmbio, embreagem e suspensão.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-microchip"></i>
+                <h3>Injeção Eletrônica</h3>
+                <p>Scanner de última geração para diagnósticos.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-snowflake"></i>
+                <h3>Ar Condicionado</h3>
+                <p>Higienização e recarga de gás.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="about">
+        <div class="about-img">
+            <img src="https://images.unsplash.com/photo-1530046339160-ce3e41600f2e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Mecânico Top Car">
+        </div>
+        <div class="about-text">
+            <h2>Qualidade e Transparência</h2>
+            <p>Na <strong>Top Car Auto Center</strong>, tratamos cada veículo com a máxima atenção. Nossa equipe é treinada para resolver problemas de forma rápida e eficiente, sem "empurroterapia".</p>
+            <ul class="check-list">
+                <li><i class="fas fa-check"></i> Peças de qualidade</li>
+                <li><i class="fas fa-check"></i> Garantia nos serviços</li>
+                <li><i class="fas fa-check"></i> Orçamento justo</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2 class="section-title white">Onde Estamos</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Av. Principal, 1000 - Centro, Sua Cidade - SP</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>(11) 99999-9999</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horário</h4>
+                            <p>Seg - Sex: 08:00 - 18:00<br>Sáb: 08:00 - 12:00</p>
+                        </div>
+                    </div>
+                    
+                    <a href="https://goo.gl/maps/SEU_LINK_AQUI" 
+                       onclick="return gtag_report_conversion(this.href);"
+                       class="btn btn-full">
+                       Ver no Google Maps
+                    </a>
+                </div>
+                
+                <div class="map-box">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197!2d-46.652!3d-23.564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzUxLjUiUyA0NsKwMzknMDcuMiJX!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Top Car Auto Center. Todos os direitos reservados.</p>
+    </footer>
+
+    <a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="app.js"></script>
 </body>
 </html>
