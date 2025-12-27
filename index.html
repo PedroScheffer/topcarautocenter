@@ -10,6 +10,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17532341100"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-17532341100');
+    </script>
+
     <script>
     function gtag_report_conversion(url) {
       var callback = function () {
@@ -17,16 +26,10 @@
           window.location = url;
         }
       };
-      // Verifica se o gtag existe (caso você esqueça a tag global) para não quebrar o site
-      if (typeof gtag === 'function') {
-          gtag('event', 'conversion', {
-              'send_to': 'AW-17532341100/nFvJCPjroNgbEOyWiahB',
-              'event_callback': callback
-          });
-      } else {
-          // Se o gtag não carregar, redireciona mesmo assim para não perder o cliente
-          window.location = url;
-      }
+      gtag('event', 'conversion', {
+          'send_to': 'AW-17532341100/nFvJCPjroNgbEOyWiahB',
+          'event_callback': callback
+      });
       return false;
     }
     </script>
@@ -63,7 +66,7 @@
                 <div class="hero-buttons">
                     <a href="https://wa.me/5511999999999" class="btn btn-primary">Agendar Agora</a>
                     
-                    <a href="https://goo.gl/maps/SEU_LINK_AQUI" 
+                    <a href="https://maps.app.goo.gl/j9EdKEVmGWK7ZWv76" 
                        onclick="return gtag_report_conversion(this.href);"
                        class="btn btn-outline">
                        <i class="fas fa-location-arrow"></i> Traçar Rota
@@ -105,7 +108,7 @@
         </div>
         <div class="about-text">
             <h2>Qualidade e Transparência</h2>
-            <p>Na <strong>Top Car Auto Center</strong>, tratamos cada veículo com a máxima atenção. Nossa equipe é treinada para resolver problemas de forma rápida e eficiente, sem "empurroterapia".</p>
+            <p>Na <strong>Top Car Auto Center</strong>, tratamos cada veículo com a máxima atenção. Nossa equipe é treinada para resolver problemas de forma rápida e eficiente.</p>
             <ul class="check-list">
                 <li><i class="fas fa-check"></i> Peças de qualidade</li>
                 <li><i class="fas fa-check"></i> Garantia nos serviços</li>
@@ -133,15 +136,8 @@
                             <p>(11) 99999-9999</p>
                         </div>
                     </div>
-                    <div class="info-item">
-                        <i class="fas fa-clock"></i>
-                        <div>
-                            <h4>Horário</h4>
-                            <p>Seg - Sex: 08:00 - 18:00<br>Sáb: 08:00 - 12:00</p>
-                        </div>
-                    </div>
                     
-                    <a href="https://goo.gl/maps/SEU_LINK_AQUI" 
+                    <a href="https://maps.app.goo.gl/j9EdKEVmGWK7ZWv76" 
                        onclick="return gtag_report_conversion(this.href);"
                        class="btn btn-full">
                        Ver no Google Maps
@@ -149,14 +145,14 @@
                 </div>
                 
                 <div class="map-box">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197!2d-46.652!3d-23.564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzUxLjUiUyA0NsKwMzknMDcuMiJX!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://maps.google.com/maps?q=Oficina&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Top Car Auto Center. Todos os direitos reservados.</p>
+        <p>© 2024 Top Car Auto Center. Todos os direitos reservados.</p>
     </footer>
 
     <a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank">
